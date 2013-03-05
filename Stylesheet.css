@@ -1,0 +1,31 @@
+html { background-image:url("Background.gif"); }
+body
+{
+	width: 35em;
+	margin: 0 auto;
+	color: yellow;
+	font-family: "Comic Sans", "Comic Sans MS";
+}
+
+h1
+{
+	text-align: center;
+	font-size: 400%;
+	color: hotpink;
+	clear: both;
+}
+
+td { text-align: center; }
+img { max-width: 100%; display: inline-block;}
+
+.RightFloater { float: right; margin-bottom: 1em; }
+
+#Gallery { text-align: center; }
+
+#Masthead
+{
+	background-color: white;
+	text-align: center;
+	color: black;
+	clear: both;
+}
