@@ -8,8 +8,26 @@
 		<link rel="shortcut icon" href="Favicon.png">
 		<title>~~ Brooke's Cat Website!!! ~~</title>
 		<link rel = "stylesheet" type = "text/css" href = "Stylesheet.css">
+		<script type = "text/javascript">
+			function DisplayPopups(DelayAfter)
+			{
+				var WordCount = Math.floor(Math.random() * 5 + 1);
+				var Words = new Array(WordCount);
+				for (var Index = 0; Index < WordCount; Index++)
+				{
+					var PossibleWords = ["cat", "cats", "kitty", "kitties", "cute", "poop", "fluffy"];
+					var Word = PossibleWords[Math.floor(Math.random() * PossibleWords.length)];
+					Words[Index] = Word;
+				}
+				
+				window.alert(Words.join(" ") + "!");
+				
+				var NextDelayAfter = Math.max(DelayAfter - 0.5, 0.5);
+				setTimeout("DisplayPopups(" + NextDelayAfter + ")", DelayAfter * 1000);
+			}
+		</script>
 	</head>
-	<body>
+	<body onload = "setTimeout('DisplayPopups(10)', 5000)">
 		<embed src = "Music.mp3" autostart = "true" loop = "true" hidden = "true">
 		<h1>brooke's cats</h1>
 		<p>Hello and welcome to my web site!!!</p>
